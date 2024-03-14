@@ -75,3 +75,7 @@ Para añadir una imagen, hemos de dar una descripción y el nombre de la imagen.
 ![RAFA GOD TEACHER](Rafa_God.png)
 
 La sinaxis es esclamación con **[]** donde dentro estará la descripción mas **()** donde estara la ruta o nombre de la imagen.
+
+### Enlaces 
+
+Los enlaces son parecidos a las imágenes, la diferencia es que no llevan exclamacion delante y se pueden introducir desntre de frases [como esta](https://www.twitch.tv/rafalagoon)
