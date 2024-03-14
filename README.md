@@ -78,4 +78,4 @@ La sinaxis es esclamación con **[]** donde dentro estará la descripción mas *
 
 ### Enlaces 
 
-Los enlaces son parecidos a las imágenes, la diferencia es que no llevan exclamacion delante y se pueden introducir desntre de frases [como esta](https://www.twitch.tv/rafalagoon)
+Los enlaces son parecidos a las imágenes, la diferencia es que no llevan exclamación delante y se pueden introducir desntre de frases [como esta!!!!!!!](https://www.twitch.tv/rafalagoon)
