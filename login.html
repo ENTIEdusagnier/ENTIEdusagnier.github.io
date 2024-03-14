@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión y Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        input[type="text"], input[type="password"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #45a049;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Iniciar Sesión</h2>
+    <form>
+        <label for="login_form">Nombre de usuario:</label><input type="text" id="login_form" name="username" required>
+        <label for="pass_form">Contraseña:</label><input type="password" id="pass_form" name="password" required>
+        <input type="submit" value="Iniciar Sesión" id="boton" >
+    </form>
+
+
+    <script>
+        
+        boton.addEventListener("click", haz_click)   
+         
+        function haz_click() {
+            
+                      
+            let rgex_user_pass = /[ \ " ' ]/;
+
+            let error_user = rgex_user_pass.test(login_form.value);
+            
+            if (login_form.value.length < 4) {
+                console.log("User pequeño de lo permitido");
+                error_user = true;
+            }
+            
+            if (pass_form.value.length < 8) {
+                console.log("Contraseña pequeño de lo permitido");
+                error_user = true;
+            }
+
+            console.log(error_user)
+
+            if (error_user) {
+                console.log("User Wrong")
+            }else{
+                console.log("User Right")
+            }
+        }
+
+    </script>
+
+
+    <!--
+    <h2>Registro</h2>
+    <form action="#" method="post">
+        <label for="newUsername">Nuevo nombre de usuario:</label>
+        <input type="text" id="newUsername" name="newUsername" required>
+        <label for="newPassword">Nueva contraseña:</label>
+        <input type="password" id="newPassword" name="newPassword" required>
+        <label for="email">Correo electrónico:</label>
+        <input type="text" id="email" name="email" required>
+        <label for="birthdate">Fecha de nacimiento:</label>
+        <input type="date" id="birthdate" name="birthdate">
+        <label for="country">País:</label>
+        <select id="country" name="country">
+            <option value="es">España</option>
+            <option value="mx">México</option>
+            <option value="ar">Argentina</option>
+        </select>   
+        <input type="submit" value="Registrarse">
+    </form> -->
+</body>
+</html>
