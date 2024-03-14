@@ -74,4 +74,4 @@ Para añadir una imagen, hemos de dar una descripción y el nombre de la imagen.
 
 ![RAFA GOD TEACHER](Rafa_God.png)
 
-La sinaxis es **! [ DESCRIPCION ]( LINK )**
+La sinaxis es esclamación con **[]** donde dentro estará la descripción mas **()** donde estara la ruta o nombre de la imagen.
