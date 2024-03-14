@@ -87,3 +87,7 @@ Los bloques de citas nos ayudan a destacar el codigo o frase de manera especial.
 > Esto es una cita.
 
 Para la cita, se ultiliza ">" seguido de espacio y el texto de la cita.
+
+> Esto es una cita .
+> Con multiples **Lineas**.
+> > Esto es una cita dento de otra.
