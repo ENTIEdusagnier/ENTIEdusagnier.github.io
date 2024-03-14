@@ -79,3 +79,11 @@ La sinaxis es esclamación con **[]** donde dentro estará la descripción mas *
 ### Enlaces 
 
 Los enlaces son parecidos a las imágenes, la diferencia es que no llevan exclamación delante y se pueden introducir desntre de frases [como esta!!!!!!!](https://www.twitch.tv/rafalagoon)
+
+### Bloques de citas
+
+Los bloques de citas nos ayudan a destacar el codigo o frase de manera especial.
+
+> Esto es una cita.
+
+Para la cita, se ultiliza ">" seguido de espacio y el texto de la cita.
