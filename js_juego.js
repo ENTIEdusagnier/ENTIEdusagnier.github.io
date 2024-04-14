@@ -17,6 +17,11 @@ let contador = document.getElementById("contador");
             mensaje.innerHTML = "Has de introducir un numero!";
             return;
         }
+        if (numero > 100 ) {
+            console.log("El numero insertado no esta dentro de los valores");
+            mensaje.innerHTML = "El numero insertado no esta dentro de los valores";
+            return;
+        }
         else if (num_random < numero) {
             console.log("El numero es demasiado grande");
             mensaje.innerHTML = "El numero es demasiado grande";

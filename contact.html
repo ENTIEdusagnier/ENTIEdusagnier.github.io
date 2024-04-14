@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>La pagina web de Edu</title>
+        <title>Contact</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+20&display=swap" rel="stylesheet">
@@ -54,13 +54,27 @@
                 <input type="text" id="user_contacto" name="user" required>
               
                 <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email_contacto" name="email" required>
+                <input type="email" id="email_contacto" name="email">
               
                 <label for="message">Mensaje:</label>
                 <textarea id="mensaje" name="message" rows="4" required></textarea>
 
                 <input type="submit" value="Enviar" id="Enviar">
             </form>
+
+            <script>
+                let correo = document.getElementById("email");
+                let rgex_email = /[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}$/;
+
+                let mail_right = rgex_email.test(correo.value);
+
+                if (mail_right) {
+                    alert("Correo erronio");
+                }else{
+                    console.log("Correo Correcto")
+                }
+            </script>
+
         </main>
         <footer>
             <p>Created by Eduard Sagnier</p>
