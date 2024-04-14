@@ -40,7 +40,7 @@ let contador = document.getElementById("contador");
     });
     
     setTimeout(function (){
-        console.log("Hola");
+        console.log("Timepo");
         
     }, 2000);
     

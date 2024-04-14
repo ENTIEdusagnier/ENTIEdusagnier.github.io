@@ -5,6 +5,7 @@ function renderTaskList() {
 
     list.innerHTML = "";
 
+    
     for (let i = 0; i < task_list.length; i++) {
         list.innerHTML += "<li>" + task_list[i] + " <button type=\"button\"> Borrar </button></li>";
     }
@@ -39,6 +40,8 @@ button_add.addEventListener("click", function() {
     	console.log(task_list);
 
     	renderTaskList();
+        localStorage.setItem("task_list", JSON.stringify(task_list));
+
 	}
 
     

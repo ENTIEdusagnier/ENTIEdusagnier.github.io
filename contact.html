@@ -44,8 +44,8 @@
             
             <ol class="contact">
                 <h2>Contacto</h2>
-                <li class="contact_list">Email:<a href="mailto:eduard.sagnier@enti.cat" >eduard.sagnier@enti.cat</a></li>
-                <li class="contact_list">Telefono: <a href="tel:+34670050607">670 05 06 07</a></li>
+                <li class="contact_list">Email:<a href="mailto:eduard.sagnier@enti.cat" class="contact_a" >eduard.sagnier@enti.cat</a></li>
+                <li class="contact_list">Telefono: <a href="tel:+34670050607" class="contact_a">670 05 06 07</a></li>
                 <li class="contact_list">Social Media: @edusagnier</li>
             </ol>
             <form class="form_mensaje">
@@ -54,25 +54,33 @@
                 <input type="text" id="user_contacto" name="user" required>
               
                 <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email_contacto" name="email">
+                <input type="email" id="email" name="email">
               
                 <label for="message">Mensaje:</label>
                 <textarea id="mensaje" name="message" rows="4" required></textarea>
 
-                <input type="submit" value="Enviar" id="Enviar">
+                <input type="submit" value="enviar" id="enviar">
             </form>
 
             <script>
-                let correo = document.getElementById("email");
-                let rgex_email = /[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}$/;
 
-                let mail_right = rgex_email.test(correo.value);
+                let button_add = document.getElementById("enviar");
 
-                if (mail_right) {
-                    alert("Correo erronio");
-                }else{
-                    console.log("Correo Correcto")
-                }
+                button_add.addEventListener("click", function() {
+
+                    let correo = document.getElementById("email");
+                    console.log(correo.value);
+
+                    let rgex_email = /[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}/;
+
+                    let mail_right = rgex_email.test(correo.value);
+
+                    if (!mail_right) {
+                        alert("Correo erronio");
+                    }else{
+                        console.log("Correo Correcto")
+                    }
+                });
             </script>
 
         </main>
