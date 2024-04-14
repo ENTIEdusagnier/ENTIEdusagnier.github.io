@@ -1,56 +1,78 @@
 <!DOCTYPE html>
+
 <html>
+    <head>
+        <title>La pagina web de Edu</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+20&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+20&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="main_style.css" />
+        <script src="https://kit.fontawesome.com/c7efd649a4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Eduard Sagnier</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Portada</a></li>
+                    <li><a href="cv.html">Currículum</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="minijuego.html">Juego</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Estudios</h2>
+            <ol>
+                <li> ASIX (con perfil de ciberseguridad) en <a href="https://enti.cat/area-ciberseguretat/cicle-superior-ciberseguretat/" >ENTI (Barcelona, ES)</a></li>
+                <li> SMIX en <a href="https://www.institutpedralbes.cat/departament-dinformatica/#1641296001444-34438285-f9ca" > INSTITUT PEDRALBES (Barcelona, ES)</a></li>
+                <li> GCSE (ESO) en <a href="https://www.theforestschool.com/"> THE FOREST SCHOOOL (Horsham, UK)</a></li>
+            </ol>
+        
+            <h2> Aficiones </h2>
+                <ul>
+                    <li><strong> Boxeo </strong></li>
+                    <!-- Utilizo figure para insertar las imagenes dentro de un contenedor -->
+                    <figure>
+                        <img src="img/boxeo1.jpg" alt="Foto mia haciendo entrenando boxeo" title="Edu hacinedo boxeo"/>
+                        <img src="img/boxeo2.jpg" alt="Foto mia haciendo sparring" title="Edu haciendo sparring"/>
+                        
+                    </figure>
+                    
+                    <li>Karting</li>
+                    <li>Airsoft</li>
+                    <li>Bash Scripting</li>
+                </ul>
+            <h2>Galeria</h2>
+            <!-- He de poner controls sino el video no se puede reproducuir-->
+            <figure>
+                <video class="video" src="img/video_boxeo1.mp4" controls></video>
+                <figcaption>Video de Edu haciendo sparring</figcaption>
+            </figure>
 
-<head>
-<title> Mi vida </title>
-<style>
-    header nav a{border: 1 solid blue;    }
-    h1{color: white; font-size:8ch; background-color: black; display: inline;}
-    body{background-color: red;font-style: italic; color: white; background-image: url(img/background.jpg);}
-    p{display: inline;background-color: red;margin: 32px;}
-    a{color: moccasin;}
-</style> 
-</head>
+        </main>
+        <footer>
+            <p>Created by Eduard Sagnier</p>
+            <nav> 
+                <a href="https://github.com/edusagnier/" style="--color: #171515">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                   
+                <a href="https://www.instagram.com/edusagnier" style="--color:	#C13584">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                <a href="https://www.twitch.tv/rafalagoon" style="--color: #6441a5">
+                    <i class="fa-brands fa-twitch "></i>
+                </a>
+            </nav>
 
-<body>
-    <header>
-        <h1> Eduard Sagnier </h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Portada</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="about.html">Sobre Mi</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>   
-
-    <main>
-        <h2> Estudios </h2>
-
-        <ol>
-        <li> ASIX (con perfil de ciberseguridad) en <a href="https://enti.cat/area-ciberseguretat/cicle-superior-ciberseguretat/" target="_blank">ENTI (Barcelona, ES)</a> </li>
-        <li> SMIX en <a href="https://www.institutpedralbes.cat/departament-dinformatica/#1641296001444-34438285-f9ca" target="_blank"> INSTITUT PEDRALBES (Barcelona, ES) </a> </li>
-        <li> GCSE (ESO) en <a href="https://www.theforestschool.com/" target="_blank"> THE FOREST SCHOOOL (Horsham, UK) </a>  </li>
-        </ol>
-
-        <h2> Aficiones </h2>
-        <ul>
-        <li><strong> Boxeo </strong></li>
-        <p><img src="img/boxeo1.JPG" alt="Foto mia haciendo boxeo"/></p>
-        <p><img src="img/boxeo2.JPG" alt="Foto mia haciendo boxeo"/></p>
-        <li>Karting</li>
-        <li>Airsoft</li>
-        <li>Bash Scripting</li>
-        </ul>
-
-
-    </main>
-
-    <footer>
-        <p>Created by Eduard Sagnier </p>
-    </footer>
-</body>
-
+        </footer>
+    </body>
 
 </html>

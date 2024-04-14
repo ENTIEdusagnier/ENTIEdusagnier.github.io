@@ -1,101 +1,78 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión y Registro</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        input[type="text"], input[type="password"], select {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        input[type="submit"] {
-            background: #4caf50;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background: #45a049;
-        }
-        h2 {
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
-<body>
-    
-    <h2>Iniciar Sesión</h2>
-    <form>
-        <label for="login_form">Nombre de usuario:</label><input type="text" id="login_form" name="username" required>
-        <label for="pass_form">Contraseña:</label><input type="password" id="pass_form" name="password" required>
-        <input type="submit" value="Iniciar Sesión" id="boton" >
-    </form>
 
+<html>
+    <head>
+        <title>La pagina web de Edu</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+20&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+20&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
-    <script>
-        
-        boton.addEventListener("click", haz_click)   
-         
-        function haz_click() {
-            
-                      
-            let rgex_user_pass = /[ \ " ' ]/;
+        <link rel="stylesheet" href="main_style.css" />
+        <script src="https://kit.fontawesome.com/c7efd649a4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Eduard Sagnier</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Portada</a></li>
+                    <li><a href="cv.html">Currículum</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="minijuego.html">Juego</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form>
+                <h2>Iniciar Sesión</h2>
+                <label for="login_form">User:</label><input type="text" id="user_form" name="username" placeholder="Username" required>
+                <label for="pass_form">Password:</label><input type="password" id="pass_form" name="password" placeholder="Password" required>
+                <label for="pass_strong_form">Fortaleza: </label><meter id="pass_strong_form" value="0" min="0" max="100" low="50" high="100" optimum="80" >Fortaleza</meter>
+                <input type="submit" value="Iniciar Sesión" id="boton" >
+            </form>
 
-            let error_user = rgex_user_pass.test(login_form.value);
-            
-            if (login_form.value.length < 4) {
-                console.log("User pequeño de lo permitido");
-                error_user = true;
-            }
-            
-            if (pass_form.value.length < 8) {
-                console.log("Contraseña pequeño de lo permitido");
-                error_user = true;
-            }
+            <form class="form">
+                <h2>Registrarse</h2>
+                    <label for="name_form">Nombre:</label><input type="text" name="Nombre" id="name_register" placeholder="Name" required>
 
-            console.log(error_user)
+                    <label for="mail_register">Email:</label><input type="text" name="Email" id="mail_register" placeholder="user@domain.com" required>
 
-            if (error_user) {
-                console.log("User Wrong")
-            }else{
-                console.log("User Right")
-            }
-        }
+                    <label for="login_form">Username:</label><input type="text" name="User" id="user_register" placeholder="User" required>
 
-    </script>
+                    <label for="birth_form">Birth:</label><input type="date" name="Birth" id="birth_register">
 
+                    <label for="pass_register">Password:</label><input type="password" name="Pass" id="pass_register" placeholder="Password" required>
+                    <label for="pass_strong_form">Fortaleza: </label><meter id="pass_strong_register" value="0" min="0" max="100" low="50" high="100" optimum="80" >Fortaleza</meter>
+                    <label for="pass_confirmation">Confirm your password: </label><input type="password" name="Pass_confirmation" id="pass_confirmation" placeholder="Confirm your password" required>
 
-    <!--
-    <h2>Registro</h2>
-    <form action="#" method="post">
-        <label for="newUsername">Nuevo nombre de usuario:</label>
-        <input type="text" id="newUsername" name="newUsername" required>
-        <label for="newPassword">Nueva contraseña:</label>
-        <input type="password" id="newPassword" name="newPassword" required>
-        <label for="email">Correo electrónico:</label>
-        <input type="text" id="email" name="email" required>
-        <label for="birthdate">Fecha de nacimiento:</label>
-        <input type="date" id="birthdate" name="birthdate">
-        <label for="country">País:</label>
-        <select id="country" name="country">
-            <option value="es">España</option>
-            <option value="mx">México</option>
-            <option value="ar">Argentina</option>
-        </select>   
-        <input type="submit" value="Registrarse">
-    </form> -->
-</body>
+                    <input type="checkbox" name="robot" id="robot_register"><label for="robot_register"> Are you a robot? </label>
+
+                    <input type="submit" value="Registrar" id="register">
+            </form>
+
+            <script src="js_password.js"></script>     
+
+        </main>
+        <footer>
+            <p>Created by Eduard Sagnier</p>
+            <nav> 
+                <a href="https://github.com/edusagnier/" style="--color: #171515">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                   
+                <a href="https://www.instagram.com/edusagnier" style="--color:	#C13584">
+                        <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                <a href="https://www.twitch.tv/rafalagoon" style="--color: #6441a5">
+                    <i class="fa-brands fa-twitch "></i>
+                </a>
+            </nav>
+
+        </footer>
+    </body>
+
 </html>

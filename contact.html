@@ -1,47 +1,84 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        input[type="text"], textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        input[type="submit"] {
-            background: #4caf50;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background: #45a049;
-        }
-    </style>
-</head>
-<body>
-    <h2>Contacto</h2>
-    <form action="#" method="post">
-        <label for="nombre" >Nombre:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" required>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-        <input type="submit" value="Enviar">
-    </form>
-</body>
+
+<html>
+    <head>
+        <title>La pagina web de Edu</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+20&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+20&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="main_style.css" />
+        <script src="https://kit.fontawesome.com/c7efd649a4.js" crossorigin="anonymous"></script>
+
+        <style>
+            
+
+            ol li a {
+                text-decoration: none;
+                color: #007bff; /* Color azul para los enlaces */
+                font-weight: bold;
+            }
+
+            /* Estilos para el texto de contacto */
+            ol li span {
+                color: #555; /* Color gris para el texto de contacto */
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Eduard Sagnier</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Portada</a></li>
+                    <li><a href="cv.html">Currículum</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="minijuego.html">Juego</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main_contact">
+            
+            <ol class="contact">
+                <h2>Contacto</h2>
+                <li class="contact_list">Email:<a href="mailto:eduard.sagnier@enti.cat" >eduard.sagnier@enti.cat</a></li>
+                <li class="contact_list">Telefono: <a href="tel:+34670050607">670 05 06 07</a></li>
+                <li class="contact_list">Social Media: @edusagnier</li>
+            </ol>
+            <form class="form_mensaje">
+                <h2>Enviar Mensaje</h2>
+                <label for="user">Usuario:</label>
+                <input type="text" id="user_contacto" name="user" required>
+              
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email_contacto" name="email" required>
+              
+                <label for="message">Mensaje:</label>
+                <textarea id="mensaje" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Enviar" id="Enviar">
+            </form>
+        </main>
+        <footer>
+            <p>Created by Eduard Sagnier</p>
+            <nav> 
+                <a href="https://github.com/edusagnier/" style="--color: #171515">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                   
+                <a href="https://www.instagram.com/edusagnier" style="--color:	#C13584">
+                        <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                <a href="https://www.twitch.tv/rafalagoon" style="--color: #6441a5">
+                    <i class="fa-brands fa-twitch "></i>
+                </a>
+            </nav>
+
+        </footer>
+    </body>
+
 </html>

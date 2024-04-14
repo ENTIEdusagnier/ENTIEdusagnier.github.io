@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+20&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+20&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-
+        
         <link rel="stylesheet" href="main_style.css" />
         <script src="https://kit.fontawesome.com/c7efd649a4.js" crossorigin="anonymous"></script>
     </head>
@@ -26,36 +26,16 @@
             </nav>
         </header>
         <main>
-            <h2>Estudios</h2>
-            <ol>
-                <li> ASIX (con perfil de ciberseguridad) en <a href="https://enti.cat/area-ciberseguretat/cicle-superior-ciberseguretat/" >ENTI (Barcelona, ES)</a> </li>
-                <li> SMIX en <a href="https://www.institutpedralbes.cat/departament-dinformatica/#1641296001444-34438285-f9ca" >INSTITUT PEDRALBES (Barcelona, ES) </a> </li>
-                <li> GCSE (ESO) en <a href="https://www.theforestschool.com/" target="_blank"> THE FOREST SCHOOOL (Horsham, UK) </a>  </li>
-            </ol>
-
-            <h2>Experiencia laboral</h2>
-            <ol>
-                <li> Profesor de ingles y robotica <a href="http://www.nuboticalh.es/" >Nubotica</a></li>
-                <li> Activity Leader en Reino Unido en <a href="https://www.standrewscollege.com/work-with-us/vacancies/non-academic-positions-2024/residential-activity-leader" >St. Andrews College </a> </li>
-            </ol>
-            
-            <h2>Idiomas</h2>
-            <ol>
-                <li>Ingles - Alto</li>
-                <li>Castellano - Nativo</li>
-                <li>Catalan - Nativo</li>
-            </ol>
-
-            <h2>Habilidades</h2>
-            <p>Linux</p>
-            <meter value="70" min="0" max="100"></meter>
-
-            <p>Programacion</p>
-            <meter value="80" min="0" max="100"></meter>
-
-            <p>Redes</p>
-            <meter value="60" min="0" max="100"></meter>
-
+            <form>
+                <h2>Juego de adivinar el numero</h2>
+                <p>Adivina un numero de 1 al 100</p>
+                <p id="mensaje"><em>Haz click, no enter</em></p>
+                    <p><label for="numero">Numero: </label><input type="number" name="numero" id="numero" placeholder="Adivina el numero"/></p>
+                    <p><input type="button" value="Adivinar" id="adivina"/></p>
+                <p id="contador">Numero de intentos: 0</p>
+                <p><meter id="countdown" min="0" max="60" value="60">Cuneta atrás</meter>
+            </form>
+            <script src="js_juego.js"></script>
         </main>
         <footer>
             <p>Created by Eduard Sagnier</p>

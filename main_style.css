@@ -1,0 +1,160 @@
+body {
+    background-color: #82babe;
+    color: #000000;
+}
+main p{
+    font-family: sans-serif;
+}
+
+header {
+    background-color:#03316dd3;
+    border-bottom: 3px solid rgb(207, 231, 253);
+    padding: 10px 0;
+    border: 1px solid #000000;
+}
+
+header h1{
+    color: #1cbd95;
+    text-align: center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6ch;
+    border-bottom: 1px solid #022655bd;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+header nav li {
+    flex-grow:1;
+	text-align:center;
+}
+
+header nav a {
+    color: #7bf7d1c9;
+    text-decoration: none;
+    background-color: #03316d6b;
+    padding: 10px 0; 
+    display: block;
+    border: 1px solid #022655bd;
+   
+}
+
+header nav a:hover {
+    color: #ffffff;
+    text-decoration:none;
+    background-color:#030d3acc;
+    display:block;
+}
+
+h2 {
+    font-family: 'Arial Black', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+footer{
+	text-align:center;
+}
+footer p{
+    margin: 40px 40px 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3ch;
+    
+}
+footer nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+
+    margin: 0 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #FFE0E9;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0);
+    color: var(--color);
+    font-size: 2.5em;
+}
+footer a:hover{
+    background: var(--color);
+    color: #39054e;
+    box-shadow: 0 0 5px var(--color),
+        0 0 25px var(--color),
+        0 0 50px var(--color),
+        0 0 200px var(--color);
+    
+}
+form label{
+    display: block;
+}
+
+input[type="text"], input[type="password"], select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+}
+input[type="submit"] {
+    background: #0993e2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+input[type="submit"]:hover {
+    background: #3e6ae4;
+    display: block;
+}
+meter {
+    width: 7%;
+    height: 15px;
+}
+
+.main_contact{
+
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+.contact{
+    flex: 1;
+    list-style-type: none;
+    padding-left: 400px;
+}
+
+.contact_list{
+    margin-bottom: 15px;
+}
+.contact_a{
+    text-decoration: none;
+    color: #007bff; /* Color azul para los enlaces */
+    font-weight: bold;
+}
+.form_mensaje{
+    flex: 1;
+    padding-right: 20px;
+}
+
+  
+
